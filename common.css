@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
 body {background-image: url('images/bg.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: 50% 50%;}
 
-.warp {width: 80%; height: 50%; margin: 80px auto; vertical-align: middle; top:50%; }
+.warp {position: relative;top:50%;transform: translateY(30%);}
 
 .text {font-weight: 700; font-size: 48px; text-align: center; margin-bottom: 40px; color: #fff; line-height: 56px;}
 .text span {color: rgba(255,255,255,.3);}
@@ -16,6 +16,7 @@ body {background-image: url('images/bg.jpg'); background-repeat: no-repeat; back
 .insta img {width: 100%;}
 
 @media screen and (max-width:414px) {
+  .warp {transform: translateY(10%);}
   .text {font-size: 30px; line-height: 40px;}
   .logo {width: 140px;}
   .down {width: 180px;}
